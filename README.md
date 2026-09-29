@@ -189,3 +189,9 @@ made: `../PREREGISTRATION_window_auc.md`.
   possible difference in pixel size. `figures/*.pdf` is the same plot as vector.
 - A live corpus rebuild reproduces every annotation column on all 5,380 shared entries.
 - Five claims need a caveat rather than a straight tick. They are in `NUMBERS.md`.
+
+## Citation and licence
+
+If you use this package, please cite the paper it reproduces; `CITATION.cff` carries the
+machine-readable record. The code is MIT-licensed (`LICENSE`); the bundled PDB coordinates
+remain public domain.
