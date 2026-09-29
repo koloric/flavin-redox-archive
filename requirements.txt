@@ -1,0 +1,8 @@
+# scikit-learn is deliberately not required: auc_ci uses the package own auc()
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+matplotlib>=3.7
+
+# Tested on CPython 3.12 with numpy 2.2.6, pandas 2.3.3, scipy 1.16.3, matplotlib 3.10.8.
+# The floors above are what installation needs; the line above is what the results were produced on.

@@ -1,0 +1,2138 @@
+{
+ "clean": {
+  "4IV6": "reduced",
+  "9KK7": "reduced",
+  "9UUU": "reduced",
+  "8OYC": "reduced",
+  "8J4Y": "reduced",
+  "3ALJ": "reduced",
+  "6Q9J": "reduced",
+  "4YAU": "reduced",
+  "4BUR": "reduced",
+  "9FL7": "reduced",
+  "2ABA": "reduced",
+  "1H63": "reduced",
+  "4UDQ": "reduced",
+  "2FZM": "reduced",
+  "4MIG": "reduced",
+  "4H4U": "reduced",
+  "1N61": "reduced",
+  "4H4Y": "reduced",
+  "9C35": "reduced",
+  "4MOE": "reduced",
+  "3TSH": "reduced",
+  "6ZE5": "reduced",
+  "9UD4": "reduced",
+  "7EPV": "reduced",
+  "1KQD": "reduced",
+  "7BTJ": "reduced",
+  "5TWB": "reduced",
+  "4H4S": "reduced",
+  "3SR6": "reduced",
+  "3E2Q": "reduced",
+  "4TM4": "reduced",
+  "5VW2": "reduced",
+  "3ATQ": "reduced",
+  "6X0K": "reduced",
+  "1AKU": "reduced",
+  "31CJ": "reduced",
+  "4OPC": "reduced",
+  "6HL4": "reduced",
+  "9HNN": "reduced",
+  "4MOQ": "reduced",
+  "7E8P": "reduced",
+  "2GQA": "reduced",
+  "1CL0": "reduced",
+  "4MOI": "reduced",
+  "7CU2": "reduced",
+  "8A5E": "reduced",
+  "9C8B": "reduced",
+  "1C7E": "reduced",
+  "2GR1": "reduced",
+  "4XVX": "reduced",
+  "4C74": "reduced",
+  "4YNT": "reduced",
+  "3S61": "reduced",
+  "3GD4": "reduced",
+  "4CY8": "reduced",
+  "4YRY": "reduced",
+  "2YM2": "reduced",
+  "4MOR": "reduced",
+  "9SMH": "reduced",
+  "8OY9": "reduced",
+  "4U8J": "reduced",
+  "7MGN": "reduced",
+  "9UD6": "reduced",
+  "4MOO": "reduced",
+  "3N3B": "reduced",
+  "4FGL": "reduced",
+  "1TVC": "reduced",
+  "4U8M": "reduced",
+  "4OPI": "reduced",
+  "4TM1": "reduced",
+  "8OY6": "reduced",
+  "3SF6": "reduced",
+  "4U8N": "reduced",
+  "4H4W": "reduced",
+  "4MIF": "reduced",
+  "8OYB": "reduced",
+  "6WY9": "reduced",
+  "9WXB": "reduced",
+  "9UDG": "reduced",
+  "9ENI": "reduced",
+  "2FVX": "reduced",
+  "9C36": "reduced",
+  "7EPW": "reduced",
+  "1P5B": "reduced",
+  "1FLA": "reduced",
+  "3R7K": "reduced",
+  "2OHI": "reduced",
+  "7MGO": "reduced",
+  "4YAO": "reduced",
+  "8OY5": "reduced",
+  "6ZE6": "reduced",
+  "8REQ": "reduced",
+  "3LJP": "reduced",
+  "3W2G": "reduced",
+  "1ZPT": "reduced",
+  "2YVF": "reduced",
+  "3NG7": "reduced",
+  "3RHA": "reduced",
+  "4MOS": "reduced",
+  "6D2G": "reduced",
+  "9ENJ": "reduced",
+  "4ZVK": "reduced",
+  "3UKH": "reduced",
+  "7AA2": "reduced",
+  "9ENN": "reduced",
+  "1H81": "reduced",
+  "3EAN": "reduced",
+  "4B65": "reduced",
+  "4DSH": "reduced",
+  "6D9A": "reduced",
+  "5K1U": "reduced",
+  "7PUA": "reduced",
+  "6NUL": "reduced",
+  "4U8I": "reduced",
+  "6P9D": "reduced",
+  "1LLZ": "reduced",
+  "4H4Q": "reduced",
+  "8R2U": "reduced",
+  "7VJ9": "semiquinone",
+  "4N5F": "reduced",
+  "4U2S": "reduced",
+  "9UDA": "reduced",
+  "8ZLR": "semiquinone",
+  "3UTH": "reduced",
+  "3QSE": "reduced",
+  "4U7F": "reduced",
+  "6UFP": "reduced",
+  "3SWO": "reduced",
+  "5LLD": "reduced",
+  "4MOG": "reduced",
+  "8ORJ": "reduced",
+  "9ERK": "reduced",
+  "5URE": "reduced",
+  "2BI8": "reduced",
+  "4TLX": "reduced",
+  "9SMF": "reduced",
+  "6Q9G": "reduced",
+  "4MOJ": "reduced",
+  "1N63": "reduced",
+  "4MOP": "reduced",
+  "8WEJ": "reduced",
+  "2YLS": "reduced",
+  "4RPH": "reduced",
+  "9ERJ": "reduced",
+  "3ITG": "reduced",
+  "8OY7": "reduced",
+  "3UKF": "reduced",
+  "4MOM": "reduced",
+  "4U8L": "reduced",
+  "6HLI": "reduced",
+  "1RZ1": "reduced",
+  "7R1J": "reduced",
+  "8DQ8": "reduced",
+  "4GDE": "reduced",
+  "9UDF": "reduced",
+  "1ZRQ": "reduced",
+  "5ULL": "reduced",
+  "3EPT": "reduced",
+  "8RBQ": "reduced",
+  "4NMD": "reduced",
+  "9LWM": "reduced",
+  "2Q0L": "reduced",
+  "3V76": "reduced",
+  "4U8K": "reduced",
+  "7VKD": "reduced",
+  "8J4W": "reduced",
+  "6D9E": "reduced",
+  "9KKH": "reduced",
+  "9UD8": "reduced",
+  "8OY4": "reduced",
+  "7VKF": "reduced",
+  "4YLF": "reduced",
+  "3UTG": "reduced",
+  "5MBX": "reduced",
+  "1Z48": "reduced",
+  "4OPT": "reduced",
+  "4U8P": "reduced",
+  "2Z9B": "reduced",
+  "9HJV": "reduced",
+  "4OPL": "reduced",
+  "1FNB": "oxidized",
+  "6X0J": "reduced",
+  "3INT": "reduced",
+  "3UTF": "reduced",
+  "9C34": "reduced",
+  "3E2S": "reduced",
+  "4KAT": "reduced",
+  "1DDO": "reduced",
+  "4B66": "reduced",
+  "4JNQ": "reduced",
+  "6ZE7": "reduced",
+  "5G3U": "reduced",
+  "8OY3": "reduced",
+  "4AWT": "reduced",
+  "7R2R": "reduced",
+  "3UKK": "reduced",
+  "8QQ7": "reduced",
+  "1FND": "oxidized",
+  "7NDZ": "reduced",
+  "8REO": "reduced",
+  "7E8Q": "reduced",
+  "2UXN": "reduced",
+  "3IAM": "reduced",
+  "4EMI": "reduced",
+  "1FNC": "reduced",
+  "6U1V": "reduced",
+  "8A6T": "reduced",
+  "2X8C": "reduced",
+  "4XGK": "reduced",
+  "4H50": "reduced",
+  "5M0Z": "reduced",
+  "8DQ7": "reduced",
+  "8OET": "reduced",
+  "3AD9": "reduced",
+  "9SMI": "reduced",
+  "3PFD": "reduced",
+  "9UD2": "reduced",
+  "4YAL": "reduced",
+  "4M9A": "reduced",
+  "8OYA": "reduced",
+  "3ICS": "reduced",
+  "4X9N": "reduced",
+  "6Q9K": "reduced",
+  "8QT9": "reduced",
+  "9HKE": "reduced",
+  "9SMG": "reduced",
+  "4X28": "reduced",
+  "7YC7": "reduced",
+  "3OIB": "reduced",
+  "7NDW": "reduced",
+  "8ZA8": "reduced",
+  "6ZE4": "reduced",
+  "2FLV": "reduced",
+  "4YAW": "reduced",
+  "9UD5": "reduced",
+  "9UD9": "reduced",
+  "8REN": "reduced",
+  "4D04": "reduced",
+  "4MO2": "reduced",
+  "5G3T": "reduced",
+  "6ZE2": "reduced",
+  "9HJW": "reduced",
+  "4WX1": "reduced",
+  "7NMP": "reduced",
+  "7SZV": "reduced",
+  "2FZN": "reduced",
+  "3ICT": "reduced",
+  "4MOF": "reduced",
+  "4ZVN": "reduced",
+  "6D9C": "reduced",
+  "4MOH": "reduced",
+  "3HDY": "reduced",
+  "8JEJ": "reduced",
+  "8OY8": "reduced",
+  "3ATR": "reduced",
+  "6HLA": "reduced",
+  "5VW7": "reduced",
+  "9C8C": "reduced",
+  "4OPU": "reduced",
+  "7VJ7": "reduced",
+  "6X9C": "reduced",
+  "9ENK": "reduced",
+  "3N3A": "reduced",
+  "3TSJ": "reduced",
+  "5G3S": "reduced",
+  "1FLN": "reduced",
+  "5HHF": "reduced",
+  "6BSN": "reduced",
+  "4OPD": "reduced",
+  "4U8O": "reduced",
+  "7MMQ": "reduced",
+  "6ZE3": "reduced",
+  "4OPG": "reduced",
+  "9C8A": "reduced",
+  "9V69": "reduced",
+  "6TG9": "reduced",
+  "4H6R": "reduced",
+  "7R1H": "reduced",
+  "2ARD": "reduced",
+  "8DSV": "reduced",
+  "8A7H": "semiquinone",
+  "6FSI": "semiquinone",
+  "6TYK": "semiquinone",
+  "5NUL": "semiquinone",
+  "3F90": "semiquinone",
+  "2FOX": "semiquinone",
+  "8A33": "semiquinone",
+  "1XYV": "semiquinone",
+  "1WSW": "semiquinone",
+  "7VIW": "oxidized",
+  "1AKV": "semiquinone",
+  "1XT6": "semiquinone",
+  "7YX0": "semiquinone",
+  "2XOE": "semiquinone",
+  "7VJ6": "semiquinone",
+  "2YVG": "semiquinone",
+  "7Z3D": "oxidized",
+  "2Z98": "oxidized",
+  "6D99": "oxidized",
+  "4NLL": "oxidized",
+  "6X0H": "oxidized",
+  "31CK": "oxidized",
+  "8J4X": "oxidized",
+  "5K1W": "oxidized",
+  "5LGX": "oxidized",
+  "2GOU": "oxidized",
+  "6D9B": "oxidized",
+  "8Z26": "oxidized",
+  "5F3R": "oxidized",
+  "8Z3G": "oxidized",
+  "2ISJ": "oxidized",
+  "2X8G": "oxidized",
+  "1D03": "oxidized",
+  "1J9G": "oxidized",
+  "4OVI": "oxidized",
+  "4ZVM": "oxidized",
+  "1AG9": "oxidized",
+  "4B1B": "oxidized",
+  "6GAR": "oxidized",
+  "4ZVL": "oxidized",
+  "6EBQ": "oxidized",
+  "5TWC": "oxidized",
+  "9KKC": "oxidized",
+  "4AOS": "oxidized",
+  "2H8X": "oxidized",
+  "9HEG": "oxidized",
+  "1ZP4": "oxidized",
+  "2OHJ": "oxidized",
+  "8Z4M": "oxidized",
+  "3F6R": "oxidized",
+  "9HE5": "oxidized",
+  "8Z8F": "oxidized",
+  "3I9V": "oxidized",
+  "3ICR": "oxidized",
+  "7MMR": "oxidized",
+  "1ZP3": "oxidized",
+  "9L8G": "oxidized",
+  "1FLV": "oxidized",
+  "4H6Q": "oxidized",
+  "4D03": "oxidized",
+  "4U7G": "oxidized",
+  "4FGK": "oxidized",
+  "5VWU": "oxidized",
+  "7YE0": "oxidized",
+  "8Z8K": "oxidized",
+  "9FDK": "oxidized",
+  "5LMC": "oxidized",
+  "6GAS": "oxidized",
+  "7Q4W": "oxidized",
+  "6GAQ": "oxidized",
+  "9HEM": "oxidized",
+  "6FSG": "oxidized",
+  "1QXO": "oxidized",
+  "4H4Z": "oxidized",
+  "4U7H": "oxidized",
+  "2FCR": "oxidized",
+  "1H51": "oxidized",
+  "6D9D": "oxidized",
+  "8Z41": "oxidized",
+  "9VQ0": "oxidized",
+  "1AKW": "oxidized",
+  "6HL3": "oxidized",
+  "7R0F": "oxidized",
+  "4AP3": "oxidized",
+  "8Z4K": "oxidized",
+  "6D2E": "oxidized",
+  "8Z3X": "oxidized",
+  "4B5N": "oxidized",
+  "2OHH": "oxidized",
+  "1CZU": "oxidized",
+  "4B68": "oxidized",
+  "1Z44": "oxidized",
+  "9FE7": "oxidized",
+  "8J4V": "oxidized",
+  "9HNL": "oxidized",
+  "2GR0": "oxidized",
+  "5BUC": "oxidized",
+  "3KAP": "oxidized",
+  "5LNI": "oxidized",
+  "9HEN": "oxidized",
+  "3F6S": "oxidized",
+  "6PZ0": "oxidized",
+  "9HNM": "oxidized",
+  "5EQF": "oxidized",
+  "2XOD": "oxidized",
+  "2BI7": "oxidized",
+  "8RBM": "oxidized",
+  "1Z42": "oxidized",
+  "5XF9": "oxidized",
+  "5EQD": "oxidized",
+  "1AKT": "oxidized",
+  "2GQW": "oxidized",
+  "4UTI": "oxidized",
+  "3L5L": "oxidized",
+  "3W2I": "oxidized",
+  "1C7F": "oxidized",
+  "9V6B": "oxidized",
+  "4AOX": "oxidized",
+  "8BEW": "oxidized",
+  "5M10": "oxidized",
+  "4ZAG": "oxidized",
+  "8Z3D": "oxidized",
+  "4DSG": "oxidized",
+  "2GRT": "oxidized",
+  "4X9M": "oxidized",
+  "5K1Q": "oxidized",
+  "1OFV": "oxidized",
+  "8Z44": "oxidized",
+  "4UTH": "oxidized",
+  "8Z3L": "oxidized",
+  "3INR": "oxidized",
+  "3HDQ": "oxidized",
+  "8T0W": "oxidized",
+  "1XYY": "oxidized",
+  "4B67": "oxidized",
+  "9VPR": "oxidized",
+  "5ER9": "oxidized",
+  "2FDX": "oxidized",
+  "8QG1": "oxidized",
+  "8REP": "oxidized",
+  "3EAO": "oxidized",
+  "4AWU": "oxidized",
+  "2FJE": "oxidized",
+  "4AWS": "oxidized",
+  "2FAX": "oxidized",
+  "1FVX": "oxidized",
+  "8Z6I": "oxidized",
+  "5K1M": "oxidized",
+  "9LWZ": "oxidized",
+  "4H4V": "oxidized",
+  "3GRT": "oxidized",
+  "4UTJ": "oxidized",
+  "2GR3": "oxidized",
+  "1N5W": "oxidized",
+  "4UDP": "oxidized",
+  "7R2O": "oxidized",
+  "9HNO": "oxidized",
+  "4H4R": "oxidized",
+  "1AKR": "oxidized",
+  "3IAS": "oxidized",
+  "1Z41": "oxidized",
+  "4H4T": "oxidized",
+  "4FGJ": "oxidized",
+  "8Z4P": "oxidized",
+  "4NMC": "oxidized",
+  "6HL2": "oxidized",
+  "1AKQ": "oxidized",
+  "9V6C": "oxidized",
+  "8Z24": "oxidized",
+  "3LO8": "oxidized",
+  "6X0I": "oxidized",
+  "9VPT": "oxidized",
+  "1YCF": "oxidized",
+  "2GR2": "oxidized",
+  "4NUL": "oxidized",
+  "5NLL": "oxidized",
+  "7SV0": "oxidized",
+  "9KKG": "oxidized",
+  "5MIU": "oxidized",
+  "4U2T": "oxidized",
+  "7R2P": "oxidized",
+  "9VPV": "oxidized",
+  "9VPX": "oxidized",
+  "4H4X": "oxidized",
+  "2Q0K": "oxidized",
+  "8Z4U": "oxidized",
+  "8Z6K": "oxidized",
+  "5K1K": "oxidized",
+  "4H4P": "oxidized",
+  "2Z9D": "oxidized",
+  "6Q1B": "oxidized",
+  "9FII": "oxidized",
+  "1P4C": "oxidized",
+  "1V4B": "oxidized",
+  "5URD": "oxidized",
+  "6HLJ": "oxidized",
+  "8Z45": "oxidized",
+  "1FLD": "oxidized",
+  "8JEK": "oxidized",
+  "3NLL": "oxidized",
+  "8Z2D": "oxidized",
+  "9Q8F": "oxidized",
+  "1AOG": "oxidized",
+  "1CZN": "oxidized",
+  "1RCF": "oxidized",
+  "4C77": "oxidized",
+  "6Q1L": "oxidized",
+  "8QGW": "oxidized",
+  "5VWT": "oxidized",
+  "4ZAF": "oxidized",
+  "6R7P": "oxidized",
+  "4ZAN": "oxidized",
+  "7VJ8": "oxidized",
+  "4AP1": "oxidized",
+  "8Z6J": "oxidized",
+  "6FT1": "oxidized"
+ },
+ "cross": {
+  "49614": {
+   "oxidized": [
+    "1AKQ"
+   ],
+   "reduced": [
+    "1AKU"
+   ],
+   "semiquinone": [
+    "1AKV"
+   ]
+  },
+  "71509": {
+   "reduced": [
+    "1C7E"
+   ],
+   "oxidized": [
+    "1C7F"
+   ]
+  },
+  "106145": {
+   "reduced": [
+    "1FLA"
+   ],
+   "oxidized": [
+    "4NLL"
+   ]
+  },
+  "107478": {
+   "reduced": [
+    "1FLN"
+   ],
+   "oxidized": [
+    "4NUL"
+   ]
+  },
+  "54584": {
+   "oxidized": [
+    "1FNB",
+    "1FND"
+   ],
+   "reduced": [
+    "1FNC"
+   ]
+  },
+  "3638": {
+   "oxidized": [
+    "1H51",
+    "5LGX"
+   ],
+   "reduced": [
+    "1H63",
+    "2ABA"
+   ]
+  },
+  "26084": {
+   "oxidized": [
+    "1J9G",
+    "1XYY"
+   ],
+   "semiquinone": [
+    "1WSW",
+    "1XYV"
+   ]
+  },
+  "17354": {
+   "oxidized": [
+    "1N5W"
+   ],
+   "reduced": [
+    "1N61",
+    "1N63"
+   ]
+  },
+  "15475": {
+   "oxidized": [
+    "1N5W"
+   ],
+   "reduced": [
+    "1N61",
+    "1N63"
+   ]
+  },
+  "15218": {
+   "oxidized": [
+    "1N5W"
+   ],
+   "reduced": [
+    "1N61",
+    "1N63"
+   ]
+  },
+  "15189": {
+   "oxidized": [
+    "1P4C"
+   ],
+   "reduced": [
+    "1P5B"
+   ]
+  },
+  "16280": {
+   "oxidized": [
+    "1V4B",
+    "2Z98",
+    "2Z9D"
+   ],
+   "reduced": [
+    "2Z9B"
+   ]
+  },
+  "25125": {
+   "oxidized": [
+    "1Z41",
+    "1Z42",
+    "1Z44"
+   ],
+   "reduced": [
+    "1Z48"
+   ]
+  },
+  "15046": {
+   "oxidized": [
+    "1ZP3"
+   ],
+   "reduced": [
+    "1ZPT",
+    "1ZRQ"
+   ]
+  },
+  "10988": {
+   "oxidized": [
+    "2BI7",
+    "3INR"
+   ],
+   "reduced": [
+    "2BI8",
+    "3INT"
+   ]
+  },
+  "52364": {
+   "oxidized": [
+    "2FAX",
+    "2FDX"
+   ],
+   "reduced": [
+    "6NUL"
+   ]
+  },
+  "27344": {
+   "reduced": [
+    "2FLV",
+    "2FVX"
+   ],
+   "oxidized": [
+    "1FLD"
+   ],
+   "semiquinone": [
+    "5NUL"
+   ]
+  },
+  "31220": {
+   "semiquinone": [
+    "2FOX"
+   ],
+   "oxidized": [
+    "5NLL"
+   ],
+   "reduced": [
+    "5ULL"
+   ]
+  },
+  "26396": {
+   "oxidized": [
+    "2GOU"
+   ],
+   "reduced": [
+    "2GQA"
+   ]
+  },
+  "8701": {
+   "oxidized": [
+    "2GR0",
+    "2GR2",
+    "2GQW"
+   ],
+   "reduced": [
+    "2GR1",
+    "2YVF"
+   ],
+   "semiquinone": [
+    "2YVG"
+   ]
+  },
+  "30633": {
+   "oxidized": [
+    "2OHH",
+    "2OHJ"
+   ],
+   "reduced": [
+    "2OHI"
+   ]
+  },
+  "34517": {
+   "oxidized": [
+    "2Q0K"
+   ],
+   "reduced": [
+    "2Q0L"
+   ]
+  },
+  "1062": {
+   "reduced": [
+    "2X8C"
+   ],
+   "oxidized": [
+    "2X8G"
+   ]
+  },
+  "84276": {
+   "oxidized": [
+    "2XOD"
+   ],
+   "semiquinone": [
+    "2XOE"
+   ]
+  },
+  "10480": {
+   "reduced": [
+    "2YLS",
+    "4C74"
+   ],
+   "oxidized": [
+    "4OVI"
+   ]
+  },
+  "34913": {
+   "reduced": [
+    "2YM2"
+   ],
+   "oxidized": [
+    "4C77"
+   ]
+  },
+  "34009": {
+   "reduced": [
+    "31CJ"
+   ],
+   "oxidized": [
+    "31CK"
+   ]
+  },
+  "37905": {
+   "reduced": [
+    "3EAN"
+   ],
+   "oxidized": [
+    "3EAO"
+   ]
+  },
+  "53949": {
+   "oxidized": [
+    "3F6R",
+    "3F6S"
+   ],
+   "semiquinone": [
+    "3F90"
+   ]
+  },
+  "28420": {
+   "reduced": [
+    "3HDY"
+   ],
+   "oxidized": [
+    "3HDQ"
+   ]
+  },
+  "3907": {
+   "oxidized": [
+    "3I9V",
+    "3IAS"
+   ],
+   "reduced": [
+    "3IAM"
+   ]
+  },
+  "3525": {
+   "oxidized": [
+    "3I9V",
+    "3IAS"
+   ],
+   "reduced": [
+    "3IAM"
+   ]
+  },
+  "4167": {
+   "oxidized": [
+    "3I9V",
+    "3IAS"
+   ],
+   "reduced": [
+    "3IAM"
+   ]
+  },
+  "4329": {
+   "oxidized": [
+    "3I9V",
+    "3IAS"
+   ],
+   "reduced": [
+    "3IAM"
+   ]
+  },
+  "4398": {
+   "oxidized": [
+    "3I9V",
+    "3IAS"
+   ],
+   "reduced": [
+    "3IAM"
+   ]
+  },
+  "4111": {
+   "oxidized": [
+    "3I9V",
+    "3IAS"
+   ],
+   "reduced": [
+    "3IAM"
+   ]
+  },
+  "4314": {
+   "oxidized": [
+    "3I9V",
+    "3IAS"
+   ],
+   "reduced": [
+    "3IAM"
+   ]
+  },
+  "4287": {
+   "oxidized": [
+    "3I9V",
+    "3IAS"
+   ],
+   "reduced": [
+    "3IAM"
+   ]
+  },
+  "43878": {
+   "oxidized": [
+    "3ICR"
+   ],
+   "reduced": [
+    "3ICS",
+    "3ICT"
+   ]
+  },
+  "3535": {
+   "oxidized": [
+    "3LO8",
+    "9KKG",
+    "9L8G",
+    "9KKC"
+   ],
+   "reduced": [
+    "5VW2",
+    "5VW7",
+    "9KK7",
+    "9KKH"
+   ]
+  },
+  "2891": {
+   "reduced": [
+    "3UKF",
+    "3UKH",
+    "3UKK",
+    "3UTF",
+    "3UTG",
+    "3UTH",
+    "4U8I",
+    "4U8J",
+    "4U8K",
+    "4U8L",
+    "4U8N",
+    "4U8O",
+    "4U8P",
+    "4U8M",
+    "4GDE",
+    "5HHF",
+    "4WX1"
+   ],
+   "oxidized": [
+    "5VWT",
+    "5VWU"
+   ]
+  },
+  "9931": {
+   "reduced": [
+    "3W2G"
+   ],
+   "oxidized": [
+    "3W2I"
+   ]
+  },
+  "101576": {
+   "oxidized": [
+    "4AWS"
+   ],
+   "reduced": [
+    "4AWT"
+   ]
+  },
+  "14437": {
+   "oxidized": [
+    "4B5N",
+    "5K1K",
+    "5K1M",
+    "5K1Q",
+    "5K1W"
+   ],
+   "reduced": [
+    "5K1U"
+   ]
+  },
+  "7609": {
+   "reduced": [
+    "4B65",
+    "4B66",
+    "6X0J",
+    "6X0K"
+   ],
+   "oxidized": [
+    "4B67",
+    "4B68",
+    "6X0H",
+    "6X0I"
+   ]
+  },
+  "86984": {
+   "oxidized": [
+    "4D03"
+   ],
+   "reduced": [
+    "4D04"
+   ]
+  },
+  "895": {
+   "reduced": [
+    "4FGL",
+    "4U7F",
+    "4ZVN",
+    "4ZVK"
+   ],
+   "oxidized": [
+    "4U7G",
+    "4U7H",
+    "4FGK",
+    "4FGJ",
+    "4ZVM",
+    "5BUC",
+    "4ZVL"
+   ]
+  },
+  "77253": {
+   "reduced": [
+    "4H4Q"
+   ],
+   "oxidized": [
+    "4H4P"
+   ]
+  },
+  "77205": {
+   "oxidized": [
+    "4H4R"
+   ],
+   "reduced": [
+    "4H4S"
+   ]
+  },
+  "78454": {
+   "oxidized": [
+    "4H4V"
+   ],
+   "reduced": [
+    "4H4W"
+   ]
+  },
+  "78382": {
+   "oxidized": [
+    "4H4X"
+   ],
+   "reduced": [
+    "4H4Y"
+   ]
+  },
+  "78333": {
+   "oxidized": [
+    "4H4Z"
+   ],
+   "reduced": [
+    "4H50"
+   ]
+  },
+  "44136": {
+   "oxidized": [
+    "4H6Q"
+   ],
+   "reduced": [
+    "4H6R"
+   ]
+  },
+  "14624": {
+   "oxidized": [
+    "4NMC"
+   ],
+   "reduced": [
+    "4NMD"
+   ]
+  },
+  "5195": {
+   "reduced": [
+    "4U2S"
+   ],
+   "oxidized": [
+    "4U2T"
+   ]
+  },
+  "46441": {
+   "oxidized": [
+    "4UDP"
+   ],
+   "reduced": [
+    "4UDQ"
+   ]
+  },
+  "78495": {
+   "reduced": [
+    "4H4U"
+   ],
+   "oxidized": [
+    "4H4T"
+   ]
+  },
+  "36923": {
+   "reduced": [
+    "4DSH"
+   ],
+   "oxidized": [
+    "4DSG"
+   ]
+  },
+  "46225": {
+   "reduced": [
+    "4X9N"
+   ],
+   "oxidized": [
+    "4X9M"
+   ]
+  },
+  "8682": {
+   "reduced": [
+    "4XGK",
+    "6D2G",
+    "6D9E",
+    "6D9C",
+    "6D9A"
+   ],
+   "oxidized": [
+    "5EQF",
+    "6D2E",
+    "6D99",
+    "6D9D",
+    "6D9B"
+   ]
+  },
+  "3832": {
+   "reduced": [
+    "4YAL",
+    "4YAU",
+    "4YAW",
+    "5URE",
+    "4YAO"
+   ],
+   "oxidized": [
+    "5URD"
+   ]
+  },
+  "4136": {
+   "reduced": [
+    "5LLD",
+    "7R1H",
+    "7R1J",
+    "7R2R"
+   ],
+   "oxidized": [
+    "5LMC",
+    "7R0F",
+    "7R2O",
+    "7R2P"
+   ]
+  },
+  "49457": {
+   "reduced": [
+    "5M0Z"
+   ],
+   "oxidized": [
+    "5M10"
+   ]
+  },
+  "7691": {
+   "reduced": [
+    "5TWB"
+   ],
+   "oxidized": [
+    "5TWC"
+   ]
+  },
+  "2365": {
+   "oxidized": [
+    "6HL2",
+    "6HL3",
+    "6R7P",
+    "8QG1",
+    "8QGW",
+    "9FDK",
+    "9FE7",
+    "9FII"
+   ],
+   "reduced": [
+    "6HL4",
+    "6HLA",
+    "6HLI",
+    "6Q9K"
+   ]
+  },
+  "3391": {
+   "oxidized": [
+    "6HL2",
+    "6HL3",
+    "6HLJ",
+    "8QG1",
+    "8QGW",
+    "9HEM",
+    "9HEN",
+    "9HEG",
+    "9HE5"
+   ],
+   "reduced": [
+    "6HL4",
+    "6HLA",
+    "6HLI",
+    "6Q9G",
+    "6Q9J"
+   ]
+  },
+  "114016": {
+   "oxidized": [
+    "6HLJ"
+   ],
+   "reduced": [
+    "6Q9J"
+   ]
+  },
+  "40928": {
+   "oxidized": [
+    "6FT1",
+    "6FSG"
+   ],
+   "semiquinone": [
+    "6FSI"
+   ]
+  },
+  "23569": {
+   "oxidized": [
+    "6EBQ",
+    "7MMR"
+   ],
+   "reduced": [
+    "7MMQ"
+   ]
+  },
+  "23221": {
+   "oxidized": [
+    "6PZ0",
+    "6Q1B",
+    "6Q1L"
+   ],
+   "semiquinone": [
+    "6TYK"
+   ]
+  },
+  "97398": {
+   "reduced": [
+    "6Q9K"
+   ],
+   "oxidized": [
+    "6R7P"
+   ]
+  },
+  "8258": {
+   "reduced": [
+    "7MMQ"
+   ],
+   "oxidized": [
+    "7MMR"
+   ]
+  },
+  "55034": {
+   "oxidized": [
+    "7Q4W"
+   ],
+   "reduced": [
+    "8A5E"
+   ]
+  },
+  "55035": {
+   "oxidized": [
+    "7Q4W"
+   ],
+   "reduced": [
+    "8A5E"
+   ]
+  },
+  "55036": {
+   "oxidized": [
+    "7Q4W"
+   ],
+   "reduced": [
+    "8A5E"
+   ]
+  },
+  "1308": {
+   "oxidized": [
+    "7VIW",
+    "7VJ8",
+    "7YE0"
+   ],
+   "semiquinone": [
+    "7VJ6",
+    "7VJ9"
+   ],
+   "reduced": [
+    "7YC7",
+    "7VJ7"
+   ]
+  },
+  "109912": {
+   "reduced": [
+    "8A6T"
+   ],
+   "oxidized": [
+    "8BEW"
+   ]
+  },
+  "109910": {
+   "reduced": [
+    "8A6T"
+   ],
+   "oxidized": [
+    "8BEW"
+   ]
+  },
+  "109911": {
+   "reduced": [
+    "8A6T"
+   ],
+   "oxidized": [
+    "8BEW"
+   ]
+  },
+  "106624": {
+   "oxidized": [
+    "8J4V"
+   ],
+   "reduced": [
+    "8J4W"
+   ]
+  },
+  "106233": {
+   "oxidized": [
+    "8J4X"
+   ],
+   "reduced": [
+    "8J4Y"
+   ]
+  },
+  "13677": {
+   "oxidized": [
+    "8J4X"
+   ],
+   "reduced": [
+    "8J4Y"
+   ]
+  },
+  "9408": {
+   "reduced": [
+    "8JEJ"
+   ],
+   "oxidized": [
+    "8JEK"
+   ]
+  },
+  "9370": {
+   "reduced": [
+    "8JEJ"
+   ],
+   "oxidized": [
+    "8JEK"
+   ]
+  },
+  "9301": {
+   "reduced": [
+    "8JEJ"
+   ],
+   "oxidized": [
+    "8JEK"
+   ]
+  },
+  "23674": {
+   "oxidized": [
+    "8RBM"
+   ],
+   "reduced": [
+    "8RBQ"
+   ]
+  },
+  "17109": {
+   "oxidized": [
+    "8RBM"
+   ],
+   "reduced": [
+    "8RBQ"
+   ]
+  },
+  "23770": {
+   "oxidized": [
+    "8RBM"
+   ],
+   "reduced": [
+    "8RBQ"
+   ]
+  },
+  "23771": {
+   "oxidized": [
+    "8RBM"
+   ],
+   "reduced": [
+    "8RBQ"
+   ]
+  },
+  "23772": {
+   "oxidized": [
+    "8RBM"
+   ],
+   "reduced": [
+    "8RBQ"
+   ]
+  },
+  "23773": {
+   "oxidized": [
+    "8RBM"
+   ],
+   "reduced": [
+    "8RBQ"
+   ]
+  },
+  "91732": {
+   "oxidized": [
+    "8REP"
+   ],
+   "reduced": [
+    "8REQ"
+   ]
+  },
+  "2660": {
+   "oxidized": [
+    "8Z3X",
+    "8Z45",
+    "8Z4K",
+    "8Z4U",
+    "8Z8F",
+    "8Z8K",
+    "8Z6K",
+    "8Z6J",
+    "8Z6I",
+    "8Z4P",
+    "8Z4M",
+    "8Z44",
+    "8Z41",
+    "8Z3L",
+    "8Z3G",
+    "8Z3D",
+    "8Z2D",
+    "8Z26",
+    "8Z24"
+   ],
+   "semiquinone": [
+    "8ZLR"
+   ],
+   "reduced": [
+    "8ZA8"
+   ]
+  },
+  "26242": {
+   "oxidized": [
+    "9HNL",
+    "9HNM",
+    "9HNO"
+   ],
+   "reduced": [
+    "9HNN"
+   ]
+  },
+  "53106": {
+   "reduced": [
+    "9V69"
+   ],
+   "oxidized": [
+    "9V6B",
+    "9V6C"
+   ]
+  }
+ },
+ "same": {
+  "10421": {
+   "oxidized": [
+    "1CZN",
+    "1CZU",
+    "1OFV"
+   ]
+  },
+  "18870": {
+   "oxidized": [
+    "1FLV",
+    "1RCF"
+   ]
+  },
+  "5877": {
+   "reduced": [
+    "2FZM",
+    "2FZN",
+    "3ITG"
+   ]
+  },
+  "22738": {
+   "oxidized": [
+    "2GRT",
+    "3GRT"
+   ]
+  },
+  "16754": {
+   "oxidized": [
+    "2H8X",
+    "3L5L"
+   ]
+  },
+  "21258": {
+   "reduced": [
+    "3ATQ",
+    "3ATR",
+    "4OPC",
+    "4OPD"
+   ]
+  },
+  "43416": {
+   "reduced": [
+    "3E2Q",
+    "3E2S"
+   ]
+  },
+  "3937": {
+   "reduced": [
+    "3N3A",
+    "3N3B"
+   ]
+  },
+  "15875": {
+   "reduced": [
+    "3N3A",
+    "3N3B"
+   ]
+  },
+  "82115": {
+   "reduced": [
+    "3TSH",
+    "3TSJ"
+   ]
+  },
+  "95940": {
+   "oxidized": [
+    "4AOS",
+    "4AOX"
+   ]
+  },
+  "6133": {
+   "reduced": [
+    "4BUR",
+    "9FL7"
+   ]
+  },
+  "53850": {
+   "reduced": [
+    "4MIG",
+    "4MIF"
+   ]
+  },
+  "35621": {
+   "reduced": [
+    "4MOE",
+    "4MOF",
+    "4MOM",
+    "4MOO"
+   ]
+  },
+  "35641": {
+   "reduced": [
+    "4MOH",
+    "4MOP",
+    "4MOQ",
+    "4MOG"
+   ]
+  },
+  "35633": {
+   "reduced": [
+    "4MOI",
+    "4MOJ",
+    "4MOR",
+    "4MOS"
+   ]
+  },
+  "12853": {
+   "oxidized": [
+    "4UTH",
+    "4UTI",
+    "4UTJ",
+    "5LNI"
+   ]
+  },
+  "20310": {
+   "reduced": [
+    "4TM4",
+    "4TM1",
+    "4TLX"
+   ]
+  },
+  "51876": {
+   "reduced": [
+    "4YRY",
+    "4YLF"
+   ]
+  },
+  "67199": {
+   "reduced": [
+    "4YRY",
+    "4YLF"
+   ]
+  },
+  "38565": {
+   "oxidized": [
+    "5ER9",
+    "5F3R",
+    "5EQD"
+   ]
+  },
+  "7074": {
+   "reduced": [
+    "5G3U",
+    "5G3T",
+    "5G3S"
+   ]
+  },
+  "16416": {
+   "reduced": [
+    "4YNT",
+    "7VKD",
+    "7VKF"
+   ]
+  },
+  "1639": {
+   "reduced": [
+    "6UFP",
+    "6X9C",
+    "9C8A",
+    "9C8B"
+   ]
+  },
+  "14720": {
+   "reduced": [
+    "6ZE2",
+    "6ZE3",
+    "6ZE4",
+    "6ZE5",
+    "6ZE6",
+    "6ZE7",
+    "7AA2"
+   ]
+  },
+  "22755": {
+   "reduced": [
+    "7EPV",
+    "7EPW",
+    "9HJW",
+    "9HKE",
+    "9HJV"
+   ]
+  },
+  "3438": {
+   "reduced": [
+    "7NDW",
+    "7NDZ",
+    "8REO",
+    "8REN"
+   ]
+  },
+  "91856": {
+   "reduced": [
+    "8DQ7",
+    "8DQ8"
+   ]
+  },
+  "8299": {
+   "reduced": [
+    "8OET",
+    "8OY3",
+    "8OY4",
+    "8OY5",
+    "8OY6",
+    "8OY7",
+    "8OY8",
+    "8OY9",
+    "8OYC",
+    "8OYB",
+    "8OYA"
+   ]
+  },
+  "79174": {
+   "reduced": [
+    "9C34",
+    "9C36"
+   ]
+  },
+  "24331": {
+   "reduced": [
+    "9ENJ",
+    "9ENK",
+    "9ENN",
+    "9ENI"
+   ]
+  },
+  "24936": {
+   "reduced": [
+    "9ERK",
+    "9ERJ"
+   ]
+  },
+  "25611": {
+   "reduced": [
+    "9ERK",
+    "9ERJ"
+   ]
+  },
+  "21518": {
+   "reduced": [
+    "9ERK",
+    "9ERJ"
+   ]
+  },
+  "24820": {
+   "reduced": [
+    "9ERK",
+    "9ERJ"
+   ]
+  },
+  "22298": {
+   "reduced": [
+    "9ERK",
+    "9ERJ"
+   ]
+  },
+  "22238": {
+   "reduced": [
+    "9ERK",
+    "9ERJ"
+   ]
+  },
+  "106093": {
+   "oxidized": [
+    "9HEM",
+    "9HEG"
+   ]
+  },
+  "1152": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1154": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1155": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1286": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1159": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1162": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1166": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1169": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1172": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1149": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1174": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1175": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1277": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "412": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "925": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "670": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1313": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "677": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "678": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "567": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1081": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1594": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1340": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1343": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "326": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "328": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "346": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1250": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1634": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1124": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "612": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "359": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1131": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1260": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1136": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1137": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "753": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1143": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1144": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1273": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1659": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1148": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1661": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1150": {
+   "reduced": [
+    "9SMF",
+    "9SMG",
+    "9SMH",
+    "9SMI"
+   ]
+  },
+  "1984": {
+   "reduced": [
+    "9UD2",
+    "9UD4",
+    "9UD5",
+    "9UD6",
+    "9UD8",
+    "9UD9",
+    "9UDA",
+    "9UDF",
+    "9UDG",
+    "9UUU"
+   ]
+  },
+  "2069": {
+   "reduced": [
+    "9UD2",
+    "9UD4",
+    "9UD5",
+    "9UD6",
+    "9UD8",
+    "9UD9",
+    "9UDA",
+    "9UDF",
+    "9UDG",
+    "9UUU"
+   ]
+  },
+  "2650": {
+   "reduced": [
+    "9UD2",
+    "9UD5",
+    "9UD6",
+    "9UD8",
+    "9UD9",
+    "9UDG",
+    "9UUU"
+   ]
+  },
+  "2107": {
+   "reduced": [
+    "9UD2",
+    "9UD4",
+    "9UD5",
+    "9UD6",
+    "9UD8",
+    "9UD9",
+    "9UDA",
+    "9UDF",
+    "9UDG",
+    "9UUU"
+   ]
+  },
+  "2142": {
+   "reduced": [
+    "9UD2",
+    "9UD4",
+    "9UD5",
+    "9UD6",
+    "9UD8",
+    "9UD9",
+    "9UDA",
+    "9UDF",
+    "9UDG",
+    "9UUU"
+   ]
+  },
+  "2241": {
+   "reduced": [
+    "9UD4",
+    "9UD5",
+    "9UD6",
+    "9UD8",
+    "9UD9",
+    "9UDA",
+    "9UDF",
+    "9UDG",
+    "9UUU"
+   ]
+  },
+  "48245": {
+   "reduced": [
+    "9UDA",
+    "9UDF"
+   ]
+  },
+  "12069": {
+   "oxidized": [
+    "9VPR",
+    "9VPV",
+    "9VPX",
+    "9VPT"
+   ]
+  }
+ }
+}

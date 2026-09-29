@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: If you use this package, please cite the paper it reproduces.
+title: >-
+  Reproduction package for "Redox state is largely absent from the structural
+  archive, and co-folding models inherit the gap"
+version: 1.0.0
+date-released: 2026-09-03
+license: MIT
+authors:
+  - family-names: Kolorici-Livnjak
+    given-names: Ivana
+    affiliation: University of Split
+  - family-names: Sanader Maršić
+    given-names: Željka
+    affiliation: University of Split

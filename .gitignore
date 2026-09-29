@@ -1,0 +1,7 @@
+# The 312 deposited structures are re-downloaded with `python data/fetch.py bend`
+# and verified line-by-line against SHA256SUMS, so they are not tracked here.
+data/pdb/
+
+# Python bytecode
+__pycache__/
+*.pyc
