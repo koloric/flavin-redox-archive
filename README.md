@@ -15,7 +15,7 @@ a GPU or a cluster.
 
 | | runs on | needs network | needed to check the paper? |
 |---|---|---|---|
-| `python reproduce.py` | any laptop, ~2 min | no | **this is the whole check** |
+| `python reproduce.py` | any laptop, 10–20 min | no | **this is the whole check** |
 | `python reproduce.py classes` | any laptop | yes, live RCSB query | no — Table 1 only |
 | `python data/fetch.py …` | any laptop, ~20 min | yes | no — re-derives the bundled inputs |
 | `predict/` | **GPU node, a few GPU-hours** | yes, for the alignments | no — outputs are bundled |
@@ -29,7 +29,7 @@ cost us a full campaign the first time.
 
 ```bash
 pip install -r requirements.txt
-python reproduce.py                # check all 108 numeric claims against the manuscript
+python reproduce.py                # check all 189 numeric claims against the manuscript
 ```
 
 That prints one line per claim — the published value, the recomputed value, and whether they
@@ -178,7 +178,7 @@ made: `../PREREGISTRATION_window_auc.md`.
 
 ## Verified before shipping
 
-- All 108 scalar claims reproduce (`python reproduce.py`), offline.
+- All 189 scalar claims reproduce (`python reproduce.py`), offline.
 - All shipped inputs match `SHA256SUMS`, which also covers the 312 deposited coordinate files
   so a fresh download can be verified against ours byte for byte. Those 312 are not shipped:
   they are unmodified RCSB entries, `python data/fetch.py bend` fetches them, and the check

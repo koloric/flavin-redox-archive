@@ -26,6 +26,13 @@ def measured():
     return d
 
 
+def structures_measured():
+    """How many of the measured structures each part of the analysis can use."""
+    d = measured()
+    return dict(structures=len(d), one_flavin_type=int((d.flavin_types == 1).sum()),
+                in_identical_sequence_cluster=int(d.protein.notna().sum()))
+
+
 def _labelled():
     """Structures of one recorded state that belong to a 100%-identity cluster."""
     d = measured()

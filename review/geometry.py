@@ -66,6 +66,20 @@ def restraint_check():
                 corpus_min=float(whole.bend.min()), corpus_max=float(whole.bend.max()))
 
 
+def agnostic_identifier_bend(threshold=10.0, cut=2.0):
+    """How far rings filed under a flat-reference identifier depart from flat, by resolution."""
+    d = deposited_bend().merge(corpus()[["pdb_id", "resolution"]], left_on="pid",
+                               right_on="pdb_id")
+    d = d[d.by_identifier == 0]
+    sharp, coarse = d[d.resolution <= cut], d[d.resolution > cut]
+    return dict(n=len(d), threshold=threshold,
+                bent_beyond_threshold=int((d.bend > threshold).sum()),
+                bent_beyond_threshold_pct=100 * float((d.bend > threshold).mean()),
+                cut=cut, n_at_or_below_cut=len(sharp),
+                median_at_or_below_cut=float(sharp.bend.median()),
+                n_above_cut=len(coarse), median_above_cut=float(coarse.bend.median()))
+
+
 def resolution_strata(cut=2.0):
     """The title-labelled contrast split by resolution, testing whether the sign is stable."""
     d = _labelled().merge(corpus()[["pdb_id", "resolution"]], left_on="pid", right_on="pdb_id")

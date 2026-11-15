@@ -1,4 +1,7 @@
-from . import annotation, cofolding, corpus, geometry, window
+from functools import lru_cache
+
+from . import annotation, cofolding, corpus, geometry, surroundings, window
+from .paths import FAD_REFERENCE, IDEAL_BEND
 
 # id, manuscript location, what it says, published value, tolerance, how to recompute it.
 # Tolerance is absolute, on the same scale as the value. A claim needing a live query or a
@@ -277,7 +280,84 @@ CLAIMS = [
      0.129, 0.005, lambda: cofolding.multiplicative_response()["bend_vs_ratio_rho"]),
     ("C69j", "Discussion", "that correlation's p-value",
      0.22, 0.01, lambda: cofolding.multiplicative_response()["bend_vs_ratio_p"]),
+    # Added in revision. SA and SB are the two panels of Table S1; R and L are numbers quoted
+    # in the response to Reviewer 1 and in the two limitations added for that reviewer.
+    ("SA1", "Table S1A", "contact residues in common, identical sequence (%)",
+     94, 0.5, lambda: 100 * _pocket("same sequence (100% identity)", "shared_contact_residues")),
+    ("SA2", "Table S1A", "contact residues in common, same 95% cluster (%)",
+     93, 0.5, lambda: 100 * _pocket("same 95%-identity cluster", "shared_contact_residues")),
+    ("SA3", "Table S1A", "contact residues in common, same 30% family, other protein (%)",
+     65, 0.5, lambda: 100 * _pocket("same 30%-identity family, different 95% cluster",
+                                    "shared_contact_residues")),
+    ("SA4", "Table S1A", "contact residues in common, different 30% families (%)",
+     26, 0.5, lambda: 100 * _pocket("different 30%-identity families",
+                                    "shared_contact_residues")),
+    ("SA5", "Table S1A", "groups, identical sequence",
+     103, 0, lambda: _pocket("same sequence (100% identity)", "groups")),
+    ("SA6", "Table S1A", "groups, same 95% cluster",
+     83, 0, lambda: _pocket("same 95%-identity cluster", "groups")),
+    ("SA7", "Table S1A", "groups, same 30% family, other protein",
+     17, 0, lambda: _pocket("same 30%-identity family, different 95% cluster", "groups")),
+    ("SA8", "Table S1A", "groups, different 30% families",
+     65, 0, lambda: _pocket("different 30%-identity families", "groups")),
+    ("SA9", "Table S1A", "measured structures holding one flavin type",
+     424, 0, lambda: surroundings.structures_measured()["one_flavin_type"]),
+    ("R4a", "Response, surroundings", "bend implied by the two reference geometries (deg)",
+     13.6, 0.05, lambda: IDEAL_BEND - FAD_REFERENCE),
+    ("R7a", "Response, restraints", "measured entries under a state-agnostic identifier",
+     284, 0, lambda: geometry.agnostic_identifier_bend()["n"]),
+    ("R7b", "Response, restraints", "of those, bent by more than 10 degrees",
+     43, 0, lambda: geometry.agnostic_identifier_bend()["bent_beyond_threshold"]),
+    ("R7c", "Response, restraints", "that as a percentage",
+     15, 0.5, lambda: geometry.agnostic_identifier_bend()["bent_beyond_threshold_pct"]),
+    ("R7d", "Response, restraints", "their median bend at 2.0 A or better (deg)",
+     5.2, 0.05, lambda: geometry.agnostic_identifier_bend()["median_at_or_below_cut"]),
+    ("R7e", "Response, restraints", "their median bend at lower resolution (deg)",
+     1.1, 0.05, lambda: geometry.agnostic_identifier_bend()["median_above_cut"]),
+    ("L8a", "Limitation 8", "entries labelled with two states at once",
+     29, 0, lambda: corpus.coverage()["multi_state"]),
+    ("L8b", "Limitation 8", "corpus entries removed as time-resolved or trapped",
+     138, 0, lambda: corpus.time_resolved_exclusion()["corpus_excluded"]),
+    ("L8c", "Limitation 8", "entries carrying a label (%)",
+     10.7, 0.05, lambda: corpus.coverage()["annotated_pct"]),
 ]
+
+# Table S1B, one row per contrast: proteins, reduced more bent, median difference, its interval
+# and the Wilcoxon p-value, each with the tolerance its rounding in the table allows.
+_SAME_PROTEIN = [
+    ("reduced by title", 55, 37, 2.3, 0.1, 4.0, 5e-5, 1e-5),
+    ("reduced by title, title names no other reducible species", 33, 23, 2.3, 0.0, 3.6,
+     8e-4, 1e-4),
+    ("reduced by title, both at or below 2.0 A", 32, 27, 3.8, 2.4, 5.2, 2e-5, 5e-6),
+    ("reduced by title, both above 2.0 A", 18, 10, 0.0, -0.1, 1.0, 0.39, 0.005),
+    ("reduced by identifier", 12, 10, 5.8, 3.1, 12.7, 0.002, 0.0005),
+    ("control: one state, random halves", 34, 19, 0.1, -0.3, 1.6, 0.45, 0.005),
+]
+for _row, (_name, _n, _up, _median, _lo, _hi, _p, _p_tol) in enumerate(_SAME_PROTEIN, 1):
+    for _letter, _column, _value, _tol in (
+            ("a", "proteins", _n, 0), ("b", "positive", _up, 0),
+            ("c", "median_difference", _median, 0.05), ("d", "ci_lo", _lo, 0.05),
+            ("e", "ci_hi", _hi, 0.05), ("f", "wilcoxon_p", _p, _p_tol)):
+        CLAIMS.append((f"SB{_row}{_letter}", "Table S1B", f"{_name}: {_column.replace('_', ' ')}",
+                       _value, _tol, lambda n=_name, c=_column: _paired(n, c)))
+
+
+@lru_cache(maxsize=None)
+def _surroundings_table(name):
+    """One of the surroundings tables, computed once per run."""
+    return getattr(surroundings, name)()
+
+
+def _pocket(grouping, column):
+    """One cell of the contact-residue table."""
+    table = _surroundings_table("pocket_similarity")
+    return float(table[table.grouping == grouping][column].iloc[0])
+
+
+def _paired(contrast, column):
+    """One cell of the same-protein contrast table."""
+    table = _surroundings_table("same_protein_contrast")
+    return float(table[table.contrast == contrast][column].iloc[0])
 
 
 def _strat_bend(stratum, field):

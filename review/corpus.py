@@ -31,6 +31,7 @@ def coverage():
                 by_identifier=int(d.has_code_signal.sum()),
                 by_title=int(d.has_title_signal.sum()),
                 by_both=both, annotated=union, unannotated=n - union,
+                multi_state=int(d.multi_state.sum()),
                 annotated_pct=100 * union / n, unannotated_pct=100 * (n - union) / n)
 
 

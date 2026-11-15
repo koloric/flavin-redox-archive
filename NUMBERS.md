@@ -1,6 +1,6 @@
 # Claim-by-claim status
 
-`python reproduce.py` checks 125 scalar claims. All 125 reproduce. This file records what each one
+`python reproduce.py` checks 189 scalar claims. All 189 reproduce. This file records what each one
 is, where its input came from, and the five places where the recomputed number needs a sentence
 of explanation rather than a straight tick.
 
@@ -117,7 +117,7 @@ alongside the corpus rather than relying on them being re-derivable.
 
 ---
 
-## The 125 checked claims
+## The 189 checked claims
 
 Each row names the manuscript location, the claim, and the function that recomputes it.
 Run `python reproduce.py` for the live comparison.
@@ -152,6 +152,11 @@ Run `python reproduce.py` for the live comparison.
 | C68a–C68j | Results 9 | whether out-of-window also means the protein is novel | 73 of 93 seen at 95%, 87 at 30%; AUC 0.336 seen vs 0.583 novel | `window.novelty_split()` |
 | M1–M2 | Methods | annotated entries excluded as time-resolved | 57 of 576 (9.9%) | `time_resolved_exclusion()` |
 | T1r | Abstract | nicotinamide recorded how many times as often as flavin | ≈ 7× | `cofactor_classes_snapshot()` |
+| SA1–SA9 | Table S1A (revision) | residues in contact with the flavin ring that two structures share, by sequence grouping | 94% / 93% / 65% / 26%; 424 structures with one flavin type | `pocket_similarity()`, `structures_measured()` |
+| SB1a–SB6f | Table S1B (revision) | reduced against oxidized flavin within the same protein | title-reduced +2.3° (37 of 55, p = 5×10⁻⁵); at 2.0 Å or better +3.8° (27 of 32); above 2.0 Å 0.0°; identifier-reduced +5.8°; control +0.1° | `same_protein_contrast()` |
+| R4a | Response to Reviewer 1 | bend implied by the two reference geometries | 13.6° | `IDEAL_BEND - FAD_REFERENCE` |
+| R7a–R7e | Response to Reviewer 1 | rings filed under a flat-reference identifier are not flat | 43 of 284 bent beyond 10° (15%); median 5.2° at 2.0 Å or better, 1.1° above | `agnostic_identifier_bend()` |
+| L8a–L8c | Limitation 8 (revision) | entries where a mixture of states is likely, and the share that carries a label | 29 with two states; 138 time-resolved or trapped; 10.7% labelled | `coverage()`, `time_resolved_exclusion()` |
 
 ## Claims not checkable here
 

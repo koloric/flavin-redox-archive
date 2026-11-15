@@ -58,11 +58,13 @@ def section_geometry():
     _show("title_group_contrast()", R.title_group_contrast())
     _show("restraint_check()", R.restraint_check())
     _show("resolution_strata()", R.resolution_strata())
+    _show("agnostic_identifier_bend()", R.agnostic_identifier_bend())
 
 
 def section_surroundings():
     """Whether the residues around the flavin change what the deposited geometry shows."""
     _rule("Surroundings of the flavin  (Supporting Information)")
+    _show("structures_measured()", R.structures_measured())
     _show("same_protein_contrast()", R.same_protein_contrast())
     _show("pocket_similarity()", R.pocket_similarity())
     _show("surroundings_by_family()", R.surroundings_by_family())
