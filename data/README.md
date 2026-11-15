@@ -34,6 +34,8 @@ overwritten.
 | `flavin_corpus.csv` | 5,380 | one row per flavin-containing PDB entry: title, components, both annotation routes, sequence clusters, resolution, method, year | `fetch.py corpus` | `../../flavin_annotation_dataset.csv` |
 | `flavin_other_fields.csv` | 5,380 | state words found in `struct_keywords` and the three entity description fields | `fetch.py other-fields` | `../../flavin_other_fields.csv` |
 | `flavin_bend_deposited.csv` | 448 | ring bend measured from deposited coordinates, with recorded state and label source | `fetch.py bend` | `../../flavin_pair_geometry_CORRECTED.csv` |
+| `flavin_environment.csv` | 448 | protein surroundings of the ring in the same 448 structures: formal charge and its 1/r sum within 8 Å of N1, the same sum at the two ring methyls as a control, hydrogen-bond partners and burial at N5, and the residues in contact with the ring | `fetch.py environment` | added in revision |
+| `flavin_environment_grid.csv` | 3,584 | the charge measurement repeated at 6, 8, 10 and 12 Å, with histidine neutral and charged | `fetch.py environment` | added in revision |
 | `boltz_prepared_312.csv` | 312 | the targets prepared for the ablation, before any prediction ran. `crystal_bend` was re-measured with `review/bend.py` on 2 September 2026: the column inherited from `cofold/manifest.csv` predated the C4X/C5X correction and measured a plane through the *adenine* for every FAD/FDA entry | `fetch.py bend` for the column | `../../cofold/manifest.csv` |
 | `boltz_ablation_36.csv` | 36 | first ablation run: predicted bend under FAD and under FDA | GPU, see below | `../../boltz_bend_deltas_36pairs.csv` |
 | `boltz_ablation_56.csv` | 56 | second run, adding unexposed families | GPU, see below | `../../boltz_bend_deltas_unexposed56.csv` |
@@ -87,6 +89,14 @@ title says, matched with word boundaries so "reductase" does not count, plus fiv
 in degrees, median over flavin copies, first alternate conformer only. `by_identifier` is 1 where
 the entry carries a state-fixing component code. `has_fnr` marks the 60 FNR entries, whose ring
 atoms use a naming convention that an earlier version of the measurement did not handle.
+
+`flavin_environment.csv` — every column is computed from polymer atoms only, never from the
+flavin, and is the median over flavin copies. Charges are formal side-chain charges at neutral pH
+(Arg and Lys +1, Asp and Glu −1), shared among the atoms that carry them; histidine is neutral
+here and charged only in the grid file. Waters and other ligands are not counted, because whether
+they are modelled depends on resolution. `contacts` lists the residues with any heavy atom within
+4.5 Å of the isoalloxazine ring of the first flavin copy; `flavin_types` is above 1 where an entry
+holds more than one flavin component, and those entries are left out of the contact comparison.
 
 `boltz_ablation_*.csv` — `ox` and `red` are the predicted bends under the FAD and FDA
 specifications, `delta` their difference. Everything else about the two runs is identical.

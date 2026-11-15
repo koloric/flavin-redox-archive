@@ -80,3 +80,41 @@ def auc_gap_permutation(labels, scores, group, draws=20000, seed=0):
         s = rng.permutation(group)
         null[i] = auc(labels[s], scores[s])[0] - auc(labels[~s], scores[~s])[0]
     return float(observed), float((np.abs(null) >= abs(observed)).mean())
+
+
+def holm(pvalues):
+    """Holm step-down adjustment for a family of p-values."""
+    p = np.asarray(pvalues, float)
+    adjusted, running = np.empty_like(p), 0.0
+    for rank, i in enumerate(np.argsort(p)):
+        running = max(running, (len(p) - rank) * p[i])
+        adjusted[i] = min(1.0, running)
+    return adjusted
+
+
+def intraclass_correlation(values, groups):
+    """One-way random-effects ICC: share of variance lying between groups of two or more."""
+    v, g = np.asarray(values, float), np.asarray(groups)
+    keep = ~np.isnan(v)
+    v, g = v[keep], g[keep]
+    labels, index, sizes = np.unique(g, return_inverse=True, return_counts=True)
+    keep = sizes[index] >= 2
+    v, index = v[keep], index[keep]
+    labels, index, sizes = np.unique(index, return_inverse=True, return_counts=True)
+    k, n = len(labels), len(v)
+    if k < 2 or n == k:
+        return float("nan")
+    means = np.bincount(index, v) / sizes
+    between = (sizes * (means - v.mean()) ** 2).sum() / (k - 1)
+    within = ((v - means[index]) ** 2).sum() / (n - k)
+    n0 = (n - (sizes ** 2).sum() / n) / (k - 1)
+    return float((between - within) / (between + (n0 - 1) * within))
+
+
+def partial_rank_correlation(x, y, covariates):
+    """Spearman association between x and y with the covariates partialled out."""
+    design = np.column_stack([np.ones(len(x))] + [stats.rankdata(z) for z in covariates])
+    residual = [r - design @ np.linalg.lstsq(design, r, rcond=None)[0]
+                for r in (stats.rankdata(x), stats.rankdata(y))]
+    result = stats.pearsonr(*residual)
+    return float(result.statistic), float(result.pvalue)

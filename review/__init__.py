@@ -9,6 +9,8 @@ from .figures import fig1, fig2
 from .annotation import misencoding_specificity
 from .geometry import (bend_by_label_source, observed_implied_change, title_specificity, naive_state_contrast, resolution_strata,
                        restraint_check, title_group_contrast)
+from .surroundings import (bend_against_surroundings, charge_specification_grid, pocket_similarity,
+                           same_protein_contrast, surroundings_by_family)
 from .window import ambiguous_label_split, label_source_confound, novelty_split, window_auc, window_gap
 from .window import title_specificity as window_title_specificity
 
@@ -22,5 +24,7 @@ __all__ = [
     "pairs", "first_run_response", "exposure_stratification", "exposure_tests", "exposure_dose",
     "wrong_direction", "completion_bias", "deposited_bend_confound", "location_shift",
     "window_auc", "window_gap", "label_source_confound", "self_exposure", "novelty_split", "multiplicative_response",
+    "same_protein_contrast", "pocket_similarity", "surroundings_by_family",
+    "bend_against_surroundings", "charge_specification_grid",
     "fig1", "fig2",
 ]

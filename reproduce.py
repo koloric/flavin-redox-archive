@@ -60,6 +60,16 @@ def section_geometry():
     _show("resolution_strata()", R.resolution_strata())
 
 
+def section_surroundings():
+    """Whether the residues around the flavin change what the deposited geometry shows."""
+    _rule("Surroundings of the flavin  (Supporting Information)")
+    _show("same_protein_contrast()", R.same_protein_contrast())
+    _show("pocket_similarity()", R.pocket_similarity())
+    _show("surroundings_by_family()", R.surroundings_by_family())
+    _show("bend_against_surroundings()", R.bend_against_surroundings())
+    _show("charge_specification_grid()", R.charge_specification_grid())
+
+
 def section_cofolding():
     """Whether Boltz-2 uses redox chemistry when it is supplied."""
     _rule("Supplied chemistry  (Fig 2A-B, Table 5)")
@@ -115,7 +125,8 @@ def section_check():
 
 
 SECTIONS = {"check": section_check, "corpus": section_corpus, "annotation": section_annotation,
-            "geometry": section_geometry, "cofolding": section_cofolding,
+            "geometry": section_geometry, "surroundings": section_surroundings,
+            "cofolding": section_cofolding,
             "window": section_window, "classes": section_classes, "figures": section_figures}
 
 

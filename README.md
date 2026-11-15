@@ -39,6 +39,7 @@ agree. It takes about two minutes and needs no network. Everything else is optio
 python reproduce.py corpus         # Fig 1, Table 2: how much state the archive records
 python reproduce.py annotation     # Table 3: misencoding, purity, wording sensitivity
 python reproduce.py geometry       # Table 4: can coordinates substitute for the label?
+python reproduce.py surroundings   # Supporting Information: the residues around the flavin
 python reproduce.py cofolding      # Fig 2A-B, Table 5: does Boltz-2 use supplied chemistry?
 python reproduce.py window         # Fig 2C: does it separate the states unprompted?
 python reproduce.py classes        # Table 1 — live RCSB query, see NUMBERS.md
@@ -134,8 +135,9 @@ what draws it.
 | `review/claims.py` | every scalar claim, its published value, and how to recompute it |
 | `review/rules.py` | the annotation rules — which codes fix a state, which words count |
 | `review/bend.py` | the isoalloxazine ring-bend measurement, for deposited and predicted structures |
-| `review/stats.py` | bootstrap, permutation, sign test, AUC |
-| `review/corpus.py` `annotation.py` `geometry.py` `cofolding.py` `window.py` | the results, by section |
+| `review/environment.py` | the protein surroundings of the ring: charge at N1, hydrogen-bond partners at N5, contact residues |
+| `review/stats.py` | bootstrap, permutation, sign test, AUC, Holm adjustment, intraclass and partial rank correlation |
+| `review/corpus.py` `annotation.py` `geometry.py` `surroundings.py` `cofolding.py` `window.py` | the results, by section |
 | `review/figures.py` | Fig 1 and Fig 2 |
 | `data/` | the bundled inputs, and `fetch.py` to rebuild them from source |
 | `evidence/` | the pre-registration, the repeat-prediction record behind the 0.22° noise floor, and the model provenance |

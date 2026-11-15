@@ -12,6 +12,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from review.bend import bend_from_pdb                                         # noqa: E402
+from review.environment import environment_from_pdb                           # noqa: E402
 from review.paths import DATA, PDB                                            # noqa: E402
 from review.rules import (FLAVIN_CODES, TITLE_PATTERNS, is_time_resolved,  # noqa: E402
                           states_from_codes, states_from_title)
@@ -211,6 +212,32 @@ def build_deposited_bend(pdb_dir=PDB, out=DATA / "flavin_bend_deposited_rebuilt.
     return table
 
 
+def build_environment(pdb_dir=PDB, out=DATA / "flavin_environment_rebuilt.csv",
+                      grid_out=DATA / "flavin_environment_grid_rebuilt.csv", download=False):
+    """Measure the protein surroundings of the ring for the same 448 structures."""
+    from review.paths import deposited_bend
+    ids = sorted(deposited_bend().pid)
+    if download:
+        print(f"  have {download_structures(ids, pdb_dir)} of {len(ids)} structure files")
+    rows, grid = [], []
+    for i, pdb_id in enumerate(ids, 1):
+        path = Path(pdb_dir) / f"{pdb_id}.pdb"
+        found = environment_from_pdb(path) if path.exists() else None
+        if found is None:
+            continue
+        grid += [dict(pid=pdb_id, **{k: round(v, 4) for k, v in g.items()})
+                 for g in found.pop("grid")]
+        rows.append(dict(pid=pdb_id, **{k: round(v, 4) if isinstance(v, float) else v
+                                        for k, v in found.items()}))
+        if i % 100 == 0:
+            print(f"    measured {i}/{len(ids)}", flush=True)
+    table = pd.DataFrame(rows)
+    table.to_csv(out, index=False)
+    pd.DataFrame(grid).to_csv(grid_out, index=False)
+    print(f"  wrote {out}  ({len(table)} rows) and {grid_out}  ({len(grid)} rows)")
+    return table
+
+
 def build_release_dates(out=DATA / "pdb_release_dates.csv"):
     """Cache initial release dates for the entries that straddle the training cutoff."""
     from review.paths import release_dates, unprompted
@@ -237,6 +264,7 @@ def compare_rebuilt(original, rebuilt, key="pdb_id"):
 
 STEPS = {"corpus": build_corpus, "other-fields": build_other_fields,
          "bend": lambda: build_deposited_bend(download=True),
+         "environment": lambda: build_environment(download=True),
          "release-dates": build_release_dates}
 
 

@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -21,6 +22,21 @@ def corpus():
 def deposited_bend():
     """Ring bend measured from deposited coordinates, 448 structures."""
     return pd.read_csv(DATA / "flavin_bend_deposited.csv")
+
+
+def environment():
+    """Protein surroundings of the isoalloxazine ring in the same 448 structures."""
+    return pd.read_csv(DATA / "flavin_environment.csv").fillna({"contacts": ""})
+
+
+def environment_grid():
+    """The charge measurement at N1 repeated over cut-off radius and histidine protonation."""
+    return pd.read_csv(DATA / "flavin_environment_grid.csv")
+
+
+def pair_sets():
+    """The 100%-identity clusters solved in more than one state, and in a single state."""
+    return json.loads((DATA / "pair_sets.json").read_text())
 
 
 def ablation():
