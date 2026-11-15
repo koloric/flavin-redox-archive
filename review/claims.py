@@ -304,6 +304,10 @@ CLAIMS = [
      424, 0, lambda: surroundings.structures_measured()["one_flavin_type"]),
     ("R4a", "Response, surroundings", "bend implied by the two reference geometries (deg)",
      13.6, 0.05, lambda: IDEAL_BEND - FAD_REFERENCE),
+    ("R4b", "Response, surroundings",
+     "same-protein difference under the reduced identifier, as a multiple of that under FAD or FMN",
+     2.5, 0.05, lambda: (_paired("reduced by identifier", "median_difference")
+                         / _paired("reduced by title", "median_difference"))),
     ("R7a", "Response, restraints", "measured entries under a state-agnostic identifier",
      284, 0, lambda: geometry.agnostic_identifier_bend()["n"]),
     ("R7b", "Response, restraints", "of those, bent by more than 10 degrees",
