@@ -4,7 +4,7 @@ import urllib.request
 
 import pandas as pd
 
-from .paths import DATA, corpus
+from .paths import DATA, corpus, deposited_bend
 from .rules import CODE_STATE, FLAVIN_CODES
 from .stats import cluster_concentration
 
@@ -33,6 +33,18 @@ def coverage():
                 by_both=both, annotated=union, unannotated=n - union,
                 multi_state=int(d.multi_state.sum()),
                 annotated_pct=100 * union / n, unannotated_pct=100 * (n - union) / n)
+
+
+def resolution_coverage(cut=2.0):
+    """How much of the corpus, and of the measured structures, is resolved at or below a cut."""
+    d = corpus()
+    m = d[d.pdb_id.isin(deposited_bend().pid)]
+    return dict(cut=cut, entries=len(d), median=float(d.resolution.median()),
+                at_or_below_cut=int((d.resolution <= cut).sum()),
+                at_or_below_cut_pct=100 * float((d.resolution <= cut).mean()),
+                measured=len(m), measured_median=float(m.resolution.median()),
+                measured_at_or_below_cut=int((m.resolution <= cut).sum()),
+                measured_at_or_below_cut_pct=100 * float((m.resolution <= cut).mean()))
 
 
 def cluster_coverage():

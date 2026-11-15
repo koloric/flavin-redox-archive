@@ -4,7 +4,7 @@ from .cofolding import (bend_stratified_exposure, cluster_level_response, comple
                         exposure_stratification, exposure_tests, first_run_response,
                         location_shift, multiplicative_response, pairs, self_exposure, wrong_direction)
 from .corpus import (by_deposition_period, time_resolved_exclusion, cluster_coverage, cofactor_classes, cofactor_classes_snapshot, component_counts,
-                     concentration, coverage)
+                     concentration, coverage, resolution_coverage)
 from .figures import fig1, fig2
 from .annotation import misencoding_specificity
 from .geometry import (agnostic_identifier_bend, bend_by_label_source, observed_implied_change, title_specificity, naive_state_contrast, resolution_strata,
@@ -26,6 +26,6 @@ __all__ = [
     "window_auc", "window_gap", "label_source_confound", "self_exposure", "novelty_split", "multiplicative_response",
     "same_protein_contrast", "pocket_similarity", "surroundings_by_family",
     "bend_against_surroundings", "charge_specification_grid", "structures_measured",
-    "agnostic_identifier_bend",
+    "agnostic_identifier_bend", "resolution_coverage",
     "fig1", "fig2",
 ]

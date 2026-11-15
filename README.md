@@ -29,7 +29,7 @@ cost us a full campaign the first time.
 
 ```bash
 pip install -r requirements.txt
-python reproduce.py                # check all 190 numeric claims against the manuscript
+python reproduce.py                # check all 211 numeric claims against the manuscript
 ```
 
 That prints one line per claim — the published value, the recomputed value, and whether they
@@ -178,7 +178,7 @@ made: `../PREREGISTRATION_window_auc.md`.
 
 ## Verified before shipping
 
-- All 190 scalar claims reproduce (`python reproduce.py`), offline.
+- All 211 scalar claims reproduce (`python reproduce.py`), offline.
 - All shipped inputs match `SHA256SUMS`, which also covers the 312 deposited coordinate files
   so a fresh download can be verified against ours byte for byte. Those 312 are not shipped:
   they are unmodified RCSB entries, `python data/fetch.py bend` fetches them, and the check

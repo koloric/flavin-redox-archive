@@ -17,8 +17,8 @@ IDENTIFIER_CLASS = {0: "state-agnostic identifier", 1: "reduced identifier"}
 def measured():
     """Bend, surroundings, label source, resolution and sequence clusters of the 448 structures."""
     d = deposited_bend().merge(environment(), on="pid")
-    d = d.join(corpus().set_index("pdb_id")[["cluster30", "cluster95", "resolution", "title"]],
-               on="pid")
+    d = d.join(corpus().set_index("pdb_id")[["cluster30", "cluster95", "resolution", "title",
+                                              "trsfx"]], on="pid")
     protein = {pid: cluster for kind in ("cross", "same")
                for cluster, by_state in pair_sets()[kind].items()
                for members in by_state.values() for pid in members}
@@ -72,6 +72,8 @@ def same_protein_contrast(cut=2.0, draws=4000, seed=0):
     unambiguous = d[~ambiguous | (d.group == "reduced, identifier")]
     subsets = [("reduced by title", d, "reduced, title"),
                ("reduced by title, title names no other reducible species", unambiguous,
+                "reduced, title"),
+               ("reduced by title, time-resolved entries left out", d[~d.trsfx],
                 "reduced, title"),
                (f"reduced by title, both at or below {cut} A", d[d.resolution <= cut],
                 "reduced, title"),

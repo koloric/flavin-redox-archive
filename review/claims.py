@@ -318,6 +318,36 @@ CLAIMS = [
      5.2, 0.05, lambda: geometry.agnostic_identifier_bend()["median_at_or_below_cut"]),
     ("R7e", "Response, restraints", "their median bend at lower resolution (deg)",
      1.1, 0.05, lambda: geometry.agnostic_identifier_bend()["median_above_cut"]),
+    ("R7f", "Response, restraints", "of those entries, solved at 2.0 A or better",
+     174, 0, lambda: geometry.agnostic_identifier_bend()["n_at_or_below_cut"]),
+    ("R7g", "Response, restraints", "of those entries, solved at lower resolution",
+     110, 0, lambda: geometry.agnostic_identifier_bend()["n_above_cut"]),
+    ("R8a", "Response, resolution", "flavin entries solved at 2.0 A or better",
+     2365, 0, lambda: corpus.resolution_coverage()["at_or_below_cut"]),
+    ("R8b", "Response, resolution", "that as a percentage of the corpus",
+     44, 0.5, lambda: corpus.resolution_coverage()["at_or_below_cut_pct"]),
+    ("R8c", "Response, resolution", "median resolution of the corpus (A)",
+     2.1, 0.005, lambda: corpus.resolution_coverage()["median"]),
+    ("R8d", "Response, resolution", "measured structures solved at 2.0 A or better",
+     263, 0, lambda: corpus.resolution_coverage()["measured_at_or_below_cut"]),
+    ("R8e", "Response, resolution", "that as a percentage of the measured structures",
+     59, 0.5, lambda: corpus.resolution_coverage()["measured_at_or_below_cut_pct"]),
+    ("R8f", "Response, resolution", "same-protein difference, both at or below 1.8 A (deg)",
+     4.7, 0.05, lambda: _paired_at(1.8, "at or below")),
+    ("R8g", "Response, resolution", "same-protein difference, both above 1.8 A (deg)",
+     0.0, 0.05, lambda: _paired_at(1.8, "above")),
+    ("R8h", "Response, resolution", "same-protein difference, both at or below 2.2 A (deg)",
+     3.7, 0.05, lambda: _paired_at(2.2, "at or below")),
+    ("R8i", "Response, resolution", "same-protein difference, both above 2.2 A (deg)",
+     0.0, 0.05, lambda: _paired_at(2.2, "above")),
+    ("R8j", "Response, resolution", "proteins compared at or below 1.8 A",
+     19, 0, lambda: _paired_at(1.8, "at or below", "proteins")),
+    ("R8k", "Response, resolution", "of those, reduced flavin more bent",
+     16, 0, lambda: _paired_at(1.8, "at or below", "positive")),
+    ("R8l", "Response, resolution", "proteins compared at or below 2.2 A",
+     36, 0, lambda: _paired_at(2.2, "at or below", "proteins")),
+    ("R8m", "Response, resolution", "of those, reduced flavin more bent",
+     29, 0, lambda: _paired_at(2.2, "at or below", "positive")),
     ("L8a", "Limitation 8", "entries labelled with two states at once",
      29, 0, lambda: corpus.coverage()["multi_state"]),
     ("L8b", "Limitation 8", "corpus entries removed as time-resolved or trapped",
@@ -336,6 +366,7 @@ _SAME_PROTEIN = [
     ("reduced by title, both above 2.0 A", 18, 10, 0.0, -0.1, 1.0, 0.39, 0.005),
     ("reduced by identifier", 12, 10, 5.8, 3.1, 12.7, 0.002, 0.0005),
     ("control: one state, random halves", 34, 19, 0.1, -0.3, 1.6, 0.45, 0.005),
+    ("reduced by title, time-resolved entries left out", 52, 35, 2.2, 0.1, 3.6, 7e-5, 1e-5),
 ]
 for _row, (_name, _n, _up, _median, _lo, _hi, _p, _p_tol) in enumerate(_SAME_PROTEIN, 1):
     for _letter, _column, _value, _tol in (
@@ -350,6 +381,19 @@ for _row, (_name, _n, _up, _median, _lo, _hi, _p, _p_tol) in enumerate(_SAME_PRO
 def _surroundings_table(name):
     """One of the surroundings tables, computed once per run."""
     return getattr(surroundings, name)()
+
+
+@lru_cache(maxsize=None)
+def _same_protein_at(cut):
+    """The same-protein contrast table with the resolution split moved to another cut."""
+    return surroundings.same_protein_contrast(cut=cut)
+
+
+def _paired_at(cut, side, column="median_difference"):
+    """One cell of the same-protein contrast on one side of a resolution cut."""
+    table = _same_protein_at(cut)
+    row = table[table.contrast == f"reduced by title, both {side} {cut} A"]
+    return float(row[column].iloc[0])
 
 
 def _pocket(grouping, column):
