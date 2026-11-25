@@ -27,7 +27,7 @@ def pairs():
 
 
 def first_run_response():
-    """Fig 2A: the 36 targets whose two arms completed in the first ablation run."""
+    """The first run alone: the 36 targets whose two arms completed. No longer quoted in the paper."""
     d = pairs()
     d = d[d.run == "first36"]
     w = stats.wilcoxon(d.red, d.ox)
@@ -36,8 +36,40 @@ def first_run_response():
                 p=float(w.pvalue), noise_floor=NOISE_FLOOR, reference=IDEAL_BEND)
 
 
+def paired_response():
+    """The response over all 92 paired targets, as the shortened Results report it."""
+    d = pairs()
+    positive, n, sign_p = sign_test(d.delta)
+    shift = float(d.delta.median())
+    return dict(n=len(d), bent_further=positive, sign_p=sign_p,
+                wilcoxon_p=float(stats.wilcoxon(d.red, d.ox).pvalue),
+                median_oxidized=float(d.ox.median()), median_reduced=float(d.red.median()),
+                median_shift=shift, shift_over_noise=shift / NOISE_FLOOR,
+                above_noise=int((d.delta > NOISE_FLOOR).sum()))
+
+
+def second_run_selection(cutoff_year=2023):
+    """How the 56 second-run targets were chosen.
+
+    Every prepared target that did not complete in the first run, carries a dinucleotide flavin
+    (FAD or FDA), and belongs to a 30%-identity family with no reduced-coded entry before the
+    cutoff. Returns how many qualify and whether any were left out.
+    """
+    d = pairs()
+    first = set(d.loc[d.run == "first36", "pdb"])
+    second = set(d.loc[d.run == "unexposed56", "pdb"])
+    c = corpus().set_index("pdb_id")
+    exposed = exposed_clusters(cutoff_year)
+    eligible = {p for p in prepared_targets().pdb_id
+                if p not in first
+                and any(code in str(c.flavin_comps.get(p, "")) for code in ("FAD", "FDA"))
+                and c.cluster30.get(p) not in exposed}
+    return dict(eligible=len(eligible), second_run=len(second),
+                left_out=len(eligible - second), not_eligible=len(second - eligible))
+
+
 def exposure_stratification():
-    """Table 5: direction and magnitude of the response, split by prior exposure."""
+    """Table 4: direction and magnitude of the response, split by prior exposure."""
     d = pairs()
     rows = []
     for exposed, group in d.groupby("exposed"):

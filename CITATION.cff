@@ -3,8 +3,8 @@ message: If you use this package, please cite the paper it reproduces.
 title: >-
   Reproduction package for "Redox state is largely absent from the structural
   archive, and co-folding models inherit the gap"
-version: 1.0.0
-date-released: 2026-09-03
+version: 1.1.0
+date-released: 2026-11-25
 license: MIT
 authors:
   - family-names: Kolorici-Livnjak

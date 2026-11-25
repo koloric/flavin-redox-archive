@@ -2,7 +2,8 @@ from .annotation import (deposition_year_trend, extra_text_fields, identifier_pu
                          misencoding, wording_sensitivity)
 from .cofolding import (bend_stratified_exposure, cluster_level_response, completion_bias, fae_control, no_pocket_control, deposited_bend_confound, exposure_dose,
                         exposure_stratification, exposure_tests, first_run_response,
-                        location_shift, multiplicative_response, pairs, self_exposure, wrong_direction)
+                        location_shift, multiplicative_response, paired_response, pairs,
+                        second_run_selection, self_exposure, wrong_direction)
 from .corpus import (by_deposition_period, time_resolved_exclusion, cluster_coverage, cofactor_classes, cofactor_classes_snapshot, component_counts,
                      concentration, coverage, resolution_coverage)
 from .figures import fig1, fig2
@@ -21,7 +22,8 @@ __all__ = [
     "extra_text_fields",
     "bend_by_label_source", "naive_state_contrast", "title_group_contrast", "restraint_check",
     "resolution_strata",
-    "pairs", "first_run_response", "exposure_stratification", "exposure_tests", "exposure_dose",
+    "pairs", "first_run_response", "paired_response", "second_run_selection",
+    "exposure_stratification", "exposure_tests", "exposure_dose",
     "wrong_direction", "completion_bias", "deposited_bend_confound", "location_shift",
     "window_auc", "window_gap", "label_source_confound", "self_exposure", "novelty_split", "multiplicative_response",
     "same_protein_contrast", "pocket_similarity", "surroundings_by_family",

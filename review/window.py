@@ -40,7 +40,7 @@ def labelled(fetch_missing=False):
 
 
 def window_auc():
-    """Fig 2C: predicted bend as a classifier of state, inside and outside the training window."""
+    """Fig 2B: predicted bend as a classifier of state, inside and outside the training window."""
     d = labelled()
     out = dict(n=len(d), n_reduced=int(d.y.sum()), n_oxidized=int((1 - d.y).sum()),
                cutoff=TRAINING_CUTOFF)

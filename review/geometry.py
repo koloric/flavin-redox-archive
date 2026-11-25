@@ -103,6 +103,9 @@ def title_specificity():
     m = m[m.has_title_signal & ~m.has_code_signal]
     m = m.assign(ambiguous=[names_other_reducible(t) for t in m.title])
     out = dict(n_ambiguous=int(m.ambiguous.sum()), n_total=len(m))
+    # the reduced-labelled entries whose title names something else reducible: flat if their
+    # flavin is in fact oxidized
+    out["ambiguous_reduced"] = float(m.loc[m.ambiguous & (m.state_union == "reduced"), "bend"].median())
     for label, sel in (("all", m.ambiguous.notna()), ("unambiguous", ~m.ambiguous)):
         s = m[sel]
         r = s.loc[s.state_union == "reduced", "bend"]

@@ -1,0 +1,7 @@
+# Needed only to draw the figures (python reproduce.py figures); checking the numbers does not.
+# RDKit draws the isoalloxazine structures, Pillow writes the TIFF files PLOS asks for.
+-r requirements.txt
+rdkit>=2023.9
+pillow>=9.0
+
+# Tested with rdkit 2025.09.2 and pillow 10.4.0.

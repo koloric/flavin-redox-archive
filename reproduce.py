@@ -38,7 +38,7 @@ def section_corpus():
 
 def section_annotation():
     """What the archive says where the state is known, and how robust the count is."""
-    _rule("Annotation quality  (Results 3-5, Table 3)")
+    _rule("Annotation quality  (Results 3-4, Table A in S1 Text)")
     _show("misencoding()", R.misencoding())
     purity = R.identifier_purity()
     _show("identifier_purity()", {k: v for k, v in purity.items() if k != "conflicting_entries"})
@@ -52,7 +52,7 @@ def section_annotation():
 
 def section_geometry():
     """Whether deposited coordinates can stand in for the missing label."""
-    _rule("Deposited geometry  (Table 4, Results 6)")
+    _rule("Deposited geometry  (Table 3, Results 5)")
     _show("bend_by_label_source()", R.bend_by_label_source())
     _show("naive_state_contrast()", R.naive_state_contrast())
     _show("title_group_contrast()", R.title_group_contrast())
@@ -63,7 +63,7 @@ def section_geometry():
 
 def section_surroundings():
     """Whether the residues around the flavin change what the deposited geometry shows."""
-    _rule("Surroundings of the flavin  (Supporting Information)")
+    _rule("Surroundings of the flavin  (S1 Text, Text D, Tables H and I)")
     _show("structures_measured()", R.structures_measured())
     _show("resolution_coverage()", R.resolution_coverage())
     _show("same_protein_contrast()", R.same_protein_contrast())
@@ -75,7 +75,7 @@ def section_surroundings():
 
 def section_cofolding():
     """Whether Boltz-2 uses redox chemistry when it is supplied."""
-    _rule("Supplied chemistry  (Fig 2A-B, Table 5)")
+    _rule("Supplied chemistry  (Fig 2A, Table 4)")
     _show("completion_bias()", R.completion_bias())
     _show("first_run_response()", R.first_run_response())
     _show("exposure_stratification()", R.exposure_stratification())
@@ -86,7 +86,7 @@ def section_cofolding():
 
 def section_window():
     """Whether the model separates the states with no chemistry supplied."""
-    _rule("Unprompted separation  (Fig 2C)")
+    _rule("Unprompted separation  (Fig 2B)")
     _show("window_auc()", R.window_auc())
     _show("window_gap()", R.window_gap())
     _show("label_source_confound()", R.label_source_confound())

@@ -1,6 +1,6 @@
 # Claim-by-claim status
 
-`python reproduce.py` checks 211 scalar claims. All 211 reproduce. This file records what each one
+`python reproduce.py` checks 210 scalar claims. All 210 reproduce. This file records what each one
 is, where its input came from, and the five places where the recomputed number needs a sentence
 of explanation rather than a straight tick.
 
@@ -117,9 +117,10 @@ alongside the corpus rather than relying on them being re-derivable.
 
 ---
 
-## The 211 checked claims
+## The 210 checked claims
 
-Each row names the manuscript location, the claim, and the function that recomputes it.
+Each row names the location in the revised manuscript (v3, after Table 3 moved to S1 Text, so the old
+Tables 4 and 5 are now 3 and 4), the claim, and the function that recomputes it.
 Run `python reproduce.py` for the live comparison.
 
 | id | where | claim | published | function |
@@ -129,36 +130,42 @@ Run `python reproduce.py` for the live comparison.
 | C11–C14 | Results 2 | clusters touched, observed against random | 110 vs 235.8; 170 vs 354.2 | `concentration()` |
 | C15–C17 | Results 3 | reduced-in-title entries filed under a state-agnostic code | 124 of 185 (67%) | `misencoding()` |
 | C18–C19 | Results 4 | deposition year against annotation | ρ = +0.015, p = 0.27 | `deposition_year_trend()` |
-| C20–C22 | Table 3 | unannotated share under alternative word lists | 89.59 / 89.29 / 83.70% | `wording_sensitivity()` |
-| C23 | Results 5 | entries added by three further text fields | 18 | `extra_text_fields()` |
-| C24–C27 | Table 4 | median bend by state and label source | 4.02 / 5.41 / 13.50 / 3.63° | `bend_by_label_source()` |
-| C28–C29 | Results 6 | structures measured; the naive contrast | 448; p = 3.6 × 10⁻¹¹ | `naive_state_contrast()` |
-| C30–C33 | Results 6 | the contrast that isolates chemistry | +1.14° [−0.20, 2.52], p = 0.66 | `title_group_contrast()` |
-| C34–C35 | Results 6 | restraint check | 6% within 0.5°; max 31.1° | `restraint_check()` |
-| C36–C38 | Fig 2A | the first ablation run | 32 of 36, p = 7.4 × 10⁻⁹, 6.51° | `first_run_response()` |
-| C39–C47 | Table 5 | exposure stratification | 26/26 +4.02°; 60/66 +1.19°; 86% / 27% | `exposure_stratification()`, `exposure_tests()` |
-| C48–C50 | Results 8 | unexposed response, and dose within exposed families | p = 3 × 10⁻¹²; ρ = −0.24, p = 0.23 | `exposure_tests()`, `exposure_dose()` |
-| C51–C56 | Results 7 | how the 36 completed targets differ from the 276 that did not | 24/36 vs 109/276; 2.20 Å vs 1.96 Å; bend 17.32° vs 5.45°, p = 0.003 | `completion_bias()` |
-| C57–C63 | Fig 2C | unprompted state separation | AUC 0.674 (n=178) vs 0.391 (n=93), gap +0.283, p = 1.1×10⁻⁴ | `window_auc()`, `window_gap()` |
-| C64–C66 | Fig 2C | the out-of-window value against chance | p = 0.10, interval [0.28, 0.51] — covers 0.5 | `window_auc()` |
-| C63a–C63e | Results 9 | the window result with uncertain labels dropped | gap +0.148, p = 0.086; the 27 ambiguous out-of-window entries score 0.271 | `window.title_specificity()`, `ambiguous_label_split()` |
-| C33a–C33c, C17b | Results 3, 6 | how specific the title route is | 96 of 284 title-only entries ambiguous; unambiguous contrast +0.71°; misencoding 55% | `geometry.title_specificity()`, `misencoding_specificity()` |
-| C39b–C39c, C45b | Results 8 | the same tests per protein family rather than per entry | 38 of 40 families; exposure p = 0.0012 | `cluster_level_response()` |
-| C39d–C39f | Results 8 | **FAE control** — a different identifier with the same ring chemistry | median shift −0.04°, 12 of 26 upward, p = 0.60 | `fae_control()` |
-| C39g–C39h | Results 8 | **no-pocket control** — the same swap in proteins that bind no flavin | +2.11°, 8 of 10, p = 0.014 | `no_pocket_control()` |
-| C50a–C50f | Results 8 | the exposure contrast adjusted for the targets' own deposited bend | ρ +0.53 → +0.33; Hodges–Lehmann +2.72° [1.55, 4.48] | `deposited_bend_confound()`, `location_shift()` |
-| C50g–C50i | Results 8 | the contrast split at the median deposited bend | upper half +5.47° vs +1.46°, p = 0.0001; lower half p = 0.13 | `bend_stratified_exposure()` |
+| C20–C22 | Table A in S1 Text | unannotated share under alternative word lists | 89.59 / 89.29 / 83.70% | `wording_sensitivity()` |
+| C23 | Text A in S1 Text | entries added by three further text fields | 18 | `extra_text_fields()` |
+| C24–C27 | Table 3 | median bend by state and label source | 4.02 / 5.41 / 13.50 / 3.63° | `bend_by_label_source()` |
+| C28–C29 | Results 5 | structures measured; the naive contrast | 448; p = 3.6 × 10⁻¹¹ | `naive_state_contrast()` |
+| C30–C33 | Results 5 | the contrast that isolates chemistry | +1.14° [−0.20, 2.52], p = 0.66 | `title_group_contrast()` |
+| C34–C35 | Results 5 | restraint check | 6% within 0.5°; max 31.1° | `restraint_check()` |
+| C38a–C38e | Results 6, Fig 2A | the response over all 92 targets | sign test p = 3 × 10⁻¹⁹; 2.85° → 4.24°; shift +1.49°, about 7× the 0.22° noise | `paired_response()` |
+| C38f–C38g | Methods | how the 56 second-run targets were chosen | all 56 eligible targets run, none left out | `second_run_selection()` |
+| C39–C47 | Table 4 | exposure stratification | 26/26 +4.02°; 60/66 +1.19°; 86% / 27% | `exposure_stratification()`, `exposure_tests()` |
+| C48–C50 | Results 7 | unexposed response, and dose within exposed families | p = 3 × 10⁻¹²; ρ = −0.24, p = 0.23 | `exposure_tests()`, `exposure_dose()` |
+| C51 | Results 6 | targets prepared for the paired predictions | 312 | `completion_bias()` |
+| C57–C63 | Fig 2B | unprompted state separation | AUC 0.674 (n=178) vs 0.391 (n=93), gap +0.283, p = 1.1×10⁻⁴ | `window_auc()`, `window_gap()` |
+| C64–C66 | Fig 2B | the out-of-window value against chance | p = 0.10, interval [0.28, 0.51] — covers 0.5 | `window_auc()` |
+| C63a–C63e | Results 8 | the window result with uncertain labels dropped | gap +0.148, p = 0.086; the 27 ambiguous out-of-window entries score 0.271 | `window.title_specificity()`, `ambiguous_label_split()` |
+| C33a0–C33c, C17b | Results 3, 5 | how specific the title route is | 96 of 284 title-only entries ambiguous, their reduced-labelled flavins at 1.84° against 5.08° (C33b2); unambiguous contrast +0.71°; misencoding 55% | `geometry.title_specificity()`, `misencoding_specificity()` |
+| C39b–C39c, C45b | Results 7 | the same tests per protein family rather than per entry | 38 of 40 families; exposure p = 0.0012 | `cluster_level_response()` |
+| C39d–C39f | Results 7 | **FAE control** — a different identifier with the same ring chemistry | median shift −0.04°, 12 of 26 upward, p = 0.60 | `fae_control()` |
+| C39g–C39h | Results 7 | **no-pocket control** — the same swap in proteins that bind no flavin | +2.11°, 8 of 10, p = 0.014 | `no_pocket_control()` |
+| C50a–C50f | Results 7 | the exposure contrast adjusted for the targets' own deposited bend | ρ +0.53 → +0.33; Hodges–Lehmann +2.72° [1.55, 4.48] | `deposited_bend_confound()`, `location_shift()` |
+| C50g–C50i | Results 7 | the contrast split at the median deposited bend | upper half +5.47° vs +1.46°, p = 0.0001; lower half p = 0.13 | `bend_stratified_exposure()` |
 | C67a–C67g | Limitation 5 | how much of the exposed group is the target's own pre-cutoff entry | 19 of 26 self-exposed; deposited bend 22.85° vs 3.96°, p = 2×10⁻⁷; ρ +0.372 adjusted | `self_exposure()` |
-| C68a–C68j | Results 9 | whether out-of-window also means the protein is novel | 73 of 93 seen at 95%, 87 at 30%; AUC 0.336 seen vs 0.583 novel | `window.novelty_split()` |
+| C68a–C68j | Results 8 | whether out-of-window also means the protein is novel | 73 of 93 seen at 95%, 87 at 30%; AUC 0.336 seen vs 0.583 novel | `window.novelty_split()` |
 | M1–M2 | Methods | annotated entries excluded as time-resolved | 57 of 576 (9.9%) | `time_resolved_exclusion()` |
 | T1r | Abstract | nicotinamide recorded how many times as often as flavin | ≈ 7× | `cofactor_classes_snapshot()` |
-| SA1–SA9 | Table S1A (revision) | residues in contact with the flavin ring that two structures share, by sequence grouping | 94% / 93% / 65% / 26%; 424 structures with one flavin type | `pocket_similarity()`, `structures_measured()` |
-| SB1a–SB7f | Table S1B (revision) | reduced against oxidized flavin within the same protein | title-reduced +2.3° (37 of 55, p = 5×10⁻⁵); at 2.0 Å or better +3.8° (27 of 32); above 2.0 Å 0.0°; identifier-reduced +5.8°; control +0.1°; without time-resolved entries +2.2° (35 of 52) | `same_protein_contrast()` |
+| SA1–SA9 | Table H in S1 Text (revision) | residues in contact with the flavin ring that two structures share, by sequence grouping | 94% / 93% / 65% / 26%; 424 structures with one flavin type | `pocket_similarity()`, `structures_measured()` |
+| SB1a–SB7f | Table I in S1 Text (revision) | reduced against oxidized flavin within the same protein | title-reduced +2.3° (37 of 55, p = 5×10⁻⁵); at 2.0 Å or better +3.8° (27 of 32); above 2.0 Å 0.0°; identifier-reduced +5.8°; control +0.1°; without time-resolved entries +2.2° (35 of 52) | `same_protein_contrast()` |
 | R4a | Response to Reviewer 1 | bend implied by the two reference geometries | 13.6° | `IDEAL_BEND - FAD_REFERENCE` |
 | R4b | Response to Reviewer 1 | how much larger the same-protein difference is when the reduced entry carries the reduced identifier | 5.8° against 2.3°, a factor of 2.5 | `same_protein_contrast()` |
 | R7a–R7g | Response to Reviewer 1 | rings filed under a flat-reference identifier are not flat | 43 of 284 bent beyond 10° (15%); median 5.2° at 2.0 Å or better (174 entries), 1.1° above (110) | `agnostic_identifier_bend()` |
 | R8a–R8m | Response to Reviewer 1 | how much of the data is well resolved, and whether the same-protein result depends on the resolution cut | 2,365 of 5,380 entries (44%) at 2.0 Å or better, median 2.1 Å; 263 of the 448 measured (59%); difference 4.7° / 0.0° at a 1.8 Å cut (16 of 19 proteins) and 3.7° / 0.0° at 2.2 Å (29 of 36) | `resolution_coverage()`, `same_protein_contrast(cut=…)` |
-| L8a–L8c | Limitation 8 (revision) | entries where a mixture of states is likely, and the share that carries a label | 29 with two states; 138 time-resolved or trapped; 10.7% labelled | `coverage()`, `time_resolved_exclusion()` |
+| L8a–L8c | Methods | entries with two states at once, entries removed as time-resolved or trapped, and the share that carries a label | 29 with two states; 138 time-resolved or trapped; 10.7% labelled | `coverage()`, `time_resolved_exclusion()` |
+
+Removed in the revision, because the text they checked is no longer in the paper: C36–C38 (the
+first run alone, 32 of 36) and C52–C56c (how the 36 completed targets differ from the 276 that did
+not). The functions `first_run_response()` and `completion_bias()` are kept, so those numbers can
+still be recomputed.
 
 ## Claims not checkable here
 
